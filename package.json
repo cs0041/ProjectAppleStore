@@ -13,12 +13,14 @@
     "@sanity/image-url": "^1.0.1",
     "@stripe/stripe-js": "^1.46.0",
     "next": "latest",
+    "next-auth": "^4.18.8",
     "next-sanity": "^4.0.0",
     "react": "18.2.0",
     "react-currency-formatter": "^1.1.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-redux": "^8.0.5",
+    "react-responsive": "^9.0.2",
     "stripe": "^11.6.0"
   },
   "devDependencies": {

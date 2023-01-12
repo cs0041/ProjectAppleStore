@@ -9,9 +9,11 @@ import { fetchCategories } from '../utils/fetchCategories'
 import { fetchProducts } from '../utils/fetchProducts'
 import Basket from '../components/Basket'
 
+
 interface Props {
   categories: Category[]
   products: Product[]
+  
 }
 
 
@@ -88,12 +90,13 @@ export default Home
 export const getServerSideProps: GetServerSideProps<Props> = async ( context ) => {
   const categories = await fetchCategories();
   const products = await fetchProducts();
-  // const session = await getSession(context);
+ 
 
   return {
     props: {
       categories,
-      products
+      products,
+    
     },
   }
 };

@@ -4,12 +4,17 @@ import { Provider } from 'react-redux'
 import { store } from '../redux/store'
 import { Toaster } from 'react-hot-toast'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ 
+  Component, 
+  pageProps: { session, ...pageProps },
+ }: AppProps) {
   return (
-    <Provider store={store}>
-      <Toaster/>
-      <Component {...pageProps} />
-    </Provider>
+
+      <Provider store={store}>
+        <Toaster />
+        <Component {...pageProps} />
+      </Provider>
+  
   )
 }
 
